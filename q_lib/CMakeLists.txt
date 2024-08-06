@@ -13,9 +13,10 @@ if(DEFINED ENV{IDF_PATH})
    idf_component_register(
       INCLUDE_DIRS ./include
    )
+else()
+   project(libq)
 endif()
 
-project(libq)
 set(q_root ${CMAKE_CURRENT_SOURCE_DIR})
 
 ###############################################################################
